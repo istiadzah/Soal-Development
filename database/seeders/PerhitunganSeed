@@ -1,0 +1,50 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Marketing;
+use App\Models\Perhitungan;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class PerhitunganSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        $alfandy = Marketing::where('name', 'Alfandy')->first();
+        $mery = Marketing::where('name', 'Mery')->first();
+        $danang = Marketing::where('name', 'Danang')->first();
+
+        $dataPerhitungan = [
+            // Bulan Mei 2024
+            [
+                'marketing_Id' => $alfandy->id,
+                'bulan' => '2024-05',
+                'omset' => 138000000,
+                'komisi' => 2.5,
+                'komisi_total' => 3450000
+            ],
+            [
+                'marketing_Id' => $mery->id,
+                'bulan' => '2024-05',
+                'omset' => 80000000,
+                'komisi' => 0,
+                'komisi_total' => 0
+            ],
+            [
+                'marketing_Id' => $mery->id,
+                'bulan' => '2024-06',
+                'omset' => 1010020000,
+                'komisi' => 10,
+                'komisi_total' => 101002000
+            ],
+        ];
+        
+        foreach ($dataPerhitungan as $data) {
+            Perhitungan::create($data);
+        }
+    }
+}

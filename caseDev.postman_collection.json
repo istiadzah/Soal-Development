@@ -1,0 +1,520 @@
+{
+	"info": {
+		"_postman_id": "8ee8018e-99ba-4fd5-abb3-adb1a37a12dd",
+		"name": "caseDev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46706446",
+		"_collection_link": "https://www.postman.com/isti-2027380/workspace/casedev/collection/46706446-8ee8018e-99ba-4fd5-abb3-adb1a37a12dd?action=share&source=collection_link&creator=46706446"
+	},
+	"item": [
+		{
+			"name": "INDEX MARKETING",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/marketing",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"marketing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INDEX PENJUALAN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/penjualan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"penjualan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INDEX PERHITUNGAN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/perhitungan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"perhitungan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INDEX PEMBAYARAN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pembayaran",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pembayaran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW MARKETING",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/marketing/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"marketing",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW PENJUALAN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/penjualan/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"penjualan",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW PEMBAYARAN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pembayaran/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pembayaran",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "STORE MARKETING",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Danang",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/marketing",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"marketing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "STORE PENJUALAN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "transaction_number",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "marketing_Id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2023-07-01",
+							"type": "text"
+						},
+						{
+							"key": "cargo_fee",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "total_balance",
+							"value": "500000000",
+							"type": "text"
+						},
+						{
+							"key": "grand_total",
+							"value": "500000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/penjualan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"penjualan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "STORE PEMBAYARAN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "marketing_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "bulan",
+							"value": "2023-06",
+							"type": "text"
+						},
+						{
+							"key": "jumlah",
+							"value": "20000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pembayaran",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pembayaran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE PEMBAYARAN",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "marketing_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "bulan",
+							"value": "2023-06",
+							"type": "text"
+						},
+						{
+							"key": "jumlah",
+							"value": "1500000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pembayaran/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pembayaran",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE PENJUALAN",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "transaction_number",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "marketing_Id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2023-06-01",
+							"type": "text"
+						},
+						{
+							"key": "cargo_fee",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "total_balance",
+							"value": "130000000",
+							"type": "text"
+						},
+						{
+							"key": "grand_total",
+							"value": "130000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/penjualan/12",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"penjualan",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE MARKETING",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Hana",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/marketing/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"marketing",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE MARKETING",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/marketing/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"marketing",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PENJUALAN",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/penjualan/13",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"penjualan",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PEMBAYARAN",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pembayaran/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pembayaran",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
